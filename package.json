@@ -1,0 +1,19 @@
+{
+    "name": "light",
+    "version": "0.0.5",
+    "type": "module",
+    "description": "Light: Simple CLI for web analysis - WIP",
+    "main": "dist/src/main.mjs",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "start": "tsc -w -p ."
+    },
+    "author": "Hifumi1337",
+    "license": "MIT",
+    "dependencies": {
+        "linkinator": "^4.0.2"
+    },
+    "devDependencies": {
+        "typescript": "^4.8.2"
+    }
+}
