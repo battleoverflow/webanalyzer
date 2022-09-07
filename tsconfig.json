@@ -1,17 +1,17 @@
 {
     "compilerOptions": {
-        "skipLibCheck": true,
         "target": "es5",
-        "module": "es2020",
+        "module": "commonjs",
+        "lib": ["es6", "es2015", "dom"],
+        "declaration": true,
+        "outDir": "lib",
+        "rootDir": "src",
         "strict": true,
-        "forceConsistentCasingInFileNames": true,
-        "resolveJsonModule": true,
+        "types": ["node"],
         "esModuleInterop": true,
-        "rootDir": ".",
-        "outDir": "dist",
-        "moduleResolution": "node",
-        "allowSyntheticDefaultImports": true
+        "resolveJsonModule": true
     },
+    
     "include": ["src/**/*"],
-    "exclude": ["node_modules"]
-  }
+    "exclude": ["node_modules", "src/main.mts"]
+}
