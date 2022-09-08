@@ -12,7 +12,7 @@
         "create": "npm run build && npm run test"
     },
     "author": "Hifumi1337",
-    "license": "BBSD 2-Clause",
+    "license": "BSD 2-Clause",
     "dependencies": {
         "chalk": "^4.1.0",
         "clear": "^0.1.0",
