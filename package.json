@@ -1,7 +1,7 @@
 {
     "name": "light",
-    "version": "0.0.7",
-    "description": "Light: Simple CLI for web analysis - WIP",
+    "version": "0.1.8",
+    "description": "Light is a TypeScript CLI created for parsing web content to locate broken links, access relevant information, and check website stability",
     "main": "./lib/index.js",
     "bin": {
         "light": "./lib/index.js"
@@ -14,10 +14,9 @@
     "author": "Hifumi1337",
     "license": "BSD 2-Clause",
     "dependencies": {
-        "chalk": "^4.1.0",
+        "axios": "^0.27.2",
         "clear": "^0.1.0",
         "commander": "^7.1.0",
-        "figlet": "^1.5.0",
         "linkinator": "^2.8.1"
     },
     "devDependencies": {

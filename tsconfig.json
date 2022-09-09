@@ -9,7 +9,9 @@
         "strict": true,
         "types": ["node"],
         "esModuleInterop": true,
-        "resolveJsonModule": true
+        "resolveJsonModule": true,
+        "skipLibCheck": true,
+        "skipDefaultLibCheck": true
     },
     
     "include": ["src/**/*"],
