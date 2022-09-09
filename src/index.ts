@@ -21,9 +21,9 @@ clear();
 
 // CLI arguments
 program
-  .version('0.1.8')
+  .version('0.1.9')
   .description("Light is a TypeScript CLI created for parsing web content to locate broken links, access relevant information, and check website stability")
-  .option('-u, --url <value>', 'Provide a URL for parsing broken links')
+  .option('-u, --url <value>', 'Provide a URL for parsing broken links and collecting web info')
   .option('-f, --file', 'Save JSON data to a file (report.json)')
   .parse(process.argv);
 

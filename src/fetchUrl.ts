@@ -18,7 +18,7 @@ const program = require("commander");
 
 // CLI arguments
 program
-    .option("-u, --url <value>", "Provide a URL for parsing broken links")
+    .option("-u, --url <value>", "Provide a URL for parsing broken links and collecting web info")
     .option("-f, --file", "Save JSON data to a file (report.json)")
     .option("-v, --verbose", "Output link information in a file and display the data in terminal")
     .option("-d, --debug", "Debug logs (more in-depth information about the domain/tools being used)")
