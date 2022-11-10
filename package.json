@@ -1,7 +1,7 @@
 {
     "name": "light",
-    "version": "0.1.9",
-    "description": "Light is a TypeScript CLI created for parsing web content to locate broken links, access relevant information, and check website stability",
+    "version": "0.1.10",
+    "description": "Light is a TypeScript CLI created for parsing web content to locate broken links and check website stability",
     "main": "./lib/index.js",
     "bin": {
         "light": "./lib/index.js"

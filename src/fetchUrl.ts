@@ -1,12 +1,8 @@
 /*
 *
-*   fetchUrl.ts | BSD 2-Clause License
-*    
-*   Authors: {
-*        Hifumi1337 (https://github.com/Hifumi1337)
-*   };
-*    
-*   Project Owner: https://github.com/Stellata-Project
+*   Project: Light - Web Analyzer
+*   File: fetchUrl.ts
+*   Stellata (c) 2022
 *
 */
 
