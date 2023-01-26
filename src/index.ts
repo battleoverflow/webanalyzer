@@ -1,37 +1,51 @@
 #!/usr/bin/env node
 
 /*
-*
-*   Project: Light - Web Analyzer
-*   File: index.ts
-*   Stellata (c) 2022
-*
+  Project: Web Analyzer (https://github.com/stellatatech/webanalyzer)
+  Author(s): azazelm3dj3d (https://github.com/azazelm3dj3d)
+  License: MIT
+
+  Stellata (c) 2022 - 2023
 */
 
-import { fetchUrl } from './fetchUrl';
+import { exit } from "process"
+import { fetchUrl } from "./fetchUrl"
 
-const clear = require('clear');
-const program = require('commander');
+const clear = require("clear")
+const program = require("commander")
 
-clear();
+clear()
 
 // CLI arguments
 program
-  .version('0.1.9')
-  .description("Light is a TypeScript CLI created for parsing web content to locate broken links, access relevant information, and check website stability")
-  .option('-u, --url <value>', 'Provide a URL for parsing broken links and collecting web info')
-  .option('-f, --file', 'Save JSON data to a file (report.json)')
-  .parse(process.argv);
+  .version("0.1.12")
+  .description(
+    "Web Analyzer is a web analysis CLI built using TypeScript to allow immediate retrieval of website information without a GUI or any type of third-party installation."
+  )
+  .option(
+    "-u, --url <value>",
+    "Provide a URL for parsing broken links and collecting web info"
+  )
+  .option(
+    "-f, --file",
+    "Save website data to a file in JSON format (default: report.json)"
+  )
+  .parse(process.argv)
 
-const cmdArguments = program.opts();
+const cmdArguments = program.opts()
 
 function runProgram() {
-    fetchUrl(cmdArguments.url.toLowerCase());
+  if (cmdArguments.url != null) {
+    fetchUrl(cmdArguments.url.toLowerCase())
+  } else {
+    console.log("[ERROR] Missing URL")
+    exit()
+  }
 }
 
-runProgram();
+runProgram()
 
 // Checks if a proper argument is given (if not, displays a help menu)
 if (!process.argv.slice(2).length) {
-    program.outputHelp();
+  program.outputHelp()
 }
