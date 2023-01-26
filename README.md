@@ -1,4 +1,4 @@
-<img src="assets/webanalyzer_logo.png" alt="Web Analyzer by Stellata">
+<img src="https://raw.githubusercontent.com/stellatatech/webanalyzer/main/assets/webanalyzer_logo.png" alt="Web Analyzer by Stellata">
 
 Web Analyzer is a web analysis CLI built using TypeScript to allow immediate retrieval of website information without a GUI or any type of third-party installation. Currently allows for broken link detection, JSON and HTML export and extraction, website data aggregation, and much more.
 

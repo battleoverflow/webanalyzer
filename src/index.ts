@@ -18,7 +18,7 @@ clear()
 
 // CLI arguments
 program
-  .version("0.1.12")
+  .version("0.1.13")
   .description(
     "Web Analyzer is a web analysis CLI built using TypeScript to allow immediate retrieval of website information without a GUI or any type of third-party installation."
   )
