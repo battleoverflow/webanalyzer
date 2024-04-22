@@ -1,11 +1,11 @@
 #!/usr/bin/env node
 
 /*
-  Project: Web Analyzer (https://github.com/stellatatech/webanalyzer)
-  Author(s): azazelm3dj3d (https://github.com/azazelm3dj3d)
+  Project: Web Analyzer (https://github.com/battleoverflow/webanalyzer)
+  Author(s): battleoverflow (https://github.com/battleoverflow)
   License: MIT
 
-  Stellata (c) 2022 - 2023
+  battleoverflow (c) 2022 - 2024
 */
 
 import { exit } from "process"
